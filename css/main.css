@@ -105,113 +105,112 @@ header, footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
 }
 
 /******HEADER STYLES********/
 
 header {
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-
+  padding: 15px 0;
 }
 
 header .content-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  
+
 }
 
 header figure {
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-
+  
 }
 
 .header-divider {
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-
+  width: 88%;
 }
 
 header nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-flow: row wrap;
+  width: 60%;
+}
+
+header nav ul {
+  width: 44%;
 }
 
 header nav ul li {
+  display: inline-block;
+  list-style: none;
+}
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
+header nav ul li a {
+  text-decoration: none;
 }
 
 /******MOBILE STYLES - HOMEPAGE********/
+
+.hero-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
-  
+}
+
+.form-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .content-wrapper {
+  width: 88%;
   }
   
   .features {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: row wrap;
   }
-  
-  .reviews, .content-wrapper {
+
+  .features-items {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: row wrap;
-  }
-  
-  .footer-content, .content-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
   }
 
-.hero-area {
-  display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-  
-}
+  .features, article {
+    width: 55%;
+  }
 
-aside {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
+  .features p {
+    margin: 0;
+  }
+
+  .reviews .content-wrapper {
+    
+  }
+
+  .reviews h3 {
+    width: 46%
+  }
 
 footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
+  width: 55%;
+}
 
+footer p {
+  margin: 0;
+}
+
+footer .content-wrapper, .copyright {
+  
 }
 
 /******MOBILE STYLES - ABOUT PAGE********/
