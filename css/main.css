@@ -105,7 +105,7 @@ header, footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
 }
 
 /******HEADER STYLES********/
@@ -115,7 +115,7 @@ header {
 }
 
 header .content-wrapper {
-margin: 0;
+  justify-content: center;
 }
 
 header figure {
@@ -131,11 +131,11 @@ header nav {
 }
 
 header nav ul {
-  width: 44%;
+  display: flex;
+  justify-content: space-around;
 }
 
 header nav ul li {
-  display: inline-block;
   list-style: none;
 }
 
@@ -145,73 +145,64 @@ header nav ul li a {
 
 /******MOBILE STYLES - HOMEPAGE********/
 
+.content-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: row wrap;
+}
+main {
+  padding: 0px 20px;
+}
+
 .hero-area {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
-
-.content-wrapper {
+  
+.features {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  width: 88%;
-}
-
-.form-description {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-}
-
-.form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-}
-  
-  .features {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
   }
 
-  .features-items {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    width: 55%;
+  .features article {
+    text-align:center;
   }
 
   .features p {
     margin: 0;
   }
 
-  .reviews div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    width: 88%;
+  .features-items {
+    width: 55%;
+    padding-bottom: 66px;
   }
 
-  .reviews h3 {
-    width: 46%
-  }
+.reviews h3 {
+  width: 65%;
+}
 
 footer p {
   margin: 0;
 }
 
 footer .content-wrapper {
-  width: 55%;
-  
+  text-align:center;
+}
+
+div.social-icons {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row nowrap;
+  padding-bottom: 50px;
+}
+
+.copyright {
+  padding-bottom: 20px;
 }
 
 /******MOBILE STYLES - ABOUT PAGE********/
@@ -219,9 +210,6 @@ footer .content-wrapper {
 
 
 /******MOBILE STYLES - FAQ PAGE********/
-
-
-
 
 /* ==========================================================================
    Helper classes
@@ -312,15 +300,66 @@ footer .content-wrapper {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /*Tablet styles here*/
+
+  main { 
+    padding: 0px 64px;
+  }
+
+  header .content-wrapper {
+    flex-flow: row nowrap;
+    width: 88%;
+  }
+
+  .hero-area {
+    width: 67%;
+  }
+
+  aside.content-wrapper {
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    padding: 0px 100px;
+  }
+
+  .form-description {
+    padding-right: 50px;
+  }
+
+  .features {
+    width: 79%;
+  }
+
+  .features article {
+    width: 30%;
+    padding-left: 60px;
+  }
+
+  .features h3 {
+    width: 70%;
+  }
+
+  .reviews h2 {
+    width: 65%;
+  }
+
+  .reviews h3 {
+    width: 40%;
+  }
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+@media only screen and (min-width: 1200px) {
+  /*Desktop styles here*/
+
+ main {
+   padding: 0px 120px;
+ }
+
+ header .content-wrapper {
+   flex-flow: row nowrap;
+
+ }
+
 }
 
 /* ==========================================================================
