@@ -148,6 +148,7 @@ header nav ul li a {
 
 .content-wrapper {
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
@@ -184,6 +185,12 @@ main {
 
 .reviews h3 {
   width: 65%;
+}
+
+.reviews .content-wrapper div {
+
+  display: flex;
+  flex-flow: column wrap;
 }
 
 footer {
@@ -353,6 +360,14 @@ div.social-icons {
     width: 40%;
   }
 
+  .reviews .content-wrapper div {
+    flex-flow: row nowrap;
+  }
+
+.rev-content {
+  flex-flow: row nowrap;
+}
+
   footer .content-wrapper {
     width: 65%;
     justify-content: center;
@@ -404,6 +419,9 @@ div.social-icons {
 @media only screen and (min-width: 1200px) {
   /*Desktop styles here*/
 
+
+  /*************HOMEPAGE DESKTOP STYLES**********/
+
  main {
    padding: 0px 120px;
  }
@@ -412,6 +430,72 @@ div.social-icons {
    
 
  }
+
+ header nav ul {
+   justify-content: space-around;
+ }
+
+.features {
+  flex-flow: column wrap;
+}
+
+.features h3 {
+  width: 40%;
+}
+
+.features .content-wrapper {
+
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.features-items {
+  flex-basis: 26%;
+}
+
+.reviews .content-wrapper {
+  justify-content: flex-start;
+}
+
+.reviews .content-wrapper .rev-content {
+  flex-flow: column wrap;
+}
+
+.rev-content h3 {
+  width: 25%;
+}
+
+footer .content-wrapper {
+  width: 100%;
+}
+
+/************ABOUT PAGE DESKTOP STYLES***********/
+
+.contact-section .content-wrapper {
+  flex-flow: column wrap;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/************FAQ PAGE DESKTOP STYLES***********/
+
+.faq .content-wrapper {
+  flex-flow: column wrap;
+  align-items: flex-start;
+}
+
+.faq-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.faq-content {
+  flex-basis: 50%;
+}
 
 }
 
