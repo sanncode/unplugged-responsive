@@ -271,7 +271,28 @@ div.social-icons {
 .copyright {
   padding-bottom: 10px;
 }
-
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
 
 /* ==========================================================================
    Helper classes
@@ -381,31 +402,24 @@ div.social-icons {
     flex-flow: row wrap;
   }
 
-  .hero-area {
-    width: 67%;
-  }
-
   aside.content-wrapper {
-    flex-flow: row nowrap;
-    align-items: flex-start;
-    padding: 0px 100px;
+    justify-content: space-between;
   }
 
   .form-description {
-    padding-right: 50px;
+   width: 40%;
   }
 
-  .features {
+  .form {
+    width: 40%;
+   }
+
+   .features .content-wrapper {
     justify-content: space-evenly;
-    align-items: normal;
-  }
+}
 
   .features-items {
     flex-basis: 35%;
-  }
-
-  .reviews h2 {
-    width: 65%;
   }
 
   .reviews h3 {
@@ -416,9 +430,10 @@ div.social-icons {
     flex-flow: row nowrap;
   }
 
-.rev-content {
-  flex-flow: row nowrap;
-}
+  .reviews .content-wrapper div .rev-content {
+    flex-flow: column wrap;   
+    width: 41%;
+  }
 
   footer .content-wrapper {
     width: 65%;
@@ -474,17 +489,34 @@ div.social-icons {
 
   /*************HOMEPAGE DESKTOP STYLES**********/
 
- main {
+ html {
    padding: 0px 120px;
  }
 
- header .content-wrapper {
-   
-
- }
+header .content-wrapper {
+  width: 100%;
+}
 
  header nav ul {
    justify-content: space-around;
+ }
+
+ .hero-area {
+  flex-flow: column wrap;
+  align-items: flex-start;
+ }
+
+ aside.content-wrapper {
+  align-items: baseline;
+  justify-content: space-evenly;
+ }
+
+ .form {
+   width: 30%;
+ }
+
+ .form-description {
+   width: 30%;
  }
 
 .features {
@@ -543,10 +575,11 @@ footer .content-wrapper {
 .faq-container {
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-between;
 }
 
 .faq-content {
-  flex-basis: 50%;
+  flex-basis: 45%;
 }
 
 }
