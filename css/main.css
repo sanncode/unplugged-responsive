@@ -123,6 +123,7 @@ textarea {
    h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 2.25em;
+    font-weight: 500;
     
    }
     
@@ -234,9 +235,13 @@ header nav ul li a {
   color: white;
   }
 
+  .features i {
+    font-size: 3.75em;
+    margin-bottom: 40px;
+  }
+
 .features h2 {
   padding: 0px 20px;
-  font-weight: 100;
 }
   .features article {
     text-align:center;
@@ -452,7 +457,7 @@ input[type=button] {
   }
 
   .hero-area h2 {
-    font-weight: 100;
+    font-weight: 500;
     padding: 0px;
   }
 
@@ -480,6 +485,7 @@ input[type=button] {
   }
 
   .features h2 {
+    font-weight: 500;
     padding: 0px 64px;
   }
 
@@ -575,6 +581,7 @@ input[type=button] {
     flex-basis: 40%;
   }
   .faq h2 {
+    font-weight: 500;
     width: 100%;
 }
 
